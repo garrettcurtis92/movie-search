@@ -15,7 +15,7 @@ form.addEventListener('submit', function(e) {
 
 // Search movies via OMDB API
 function searchMovies(query) {
-    const url = `http://www.omdbapi.com/?s=${encodeURIComponent(query)}&apikey=f6ce2e0`;
+    const url = `https://www.omdbapi.com/?s=${encodeURIComponent(query)}&apikey=f6ce2e0`;
     fetch(url)
         .then(response => response.json())
         .then(data => {
