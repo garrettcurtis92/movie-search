@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Modern font */
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#search-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 25px; /* Rounded edges */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #007bff; /* Blue highlight on focus */
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive grid */
+    gap: 25px;
+}
+
+#results div {
+    background: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#results div:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#results h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+#results img {
+    max-width: 100%;
+    border-radius: 5px;
+}
