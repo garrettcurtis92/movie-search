@@ -85,3 +85,40 @@ button:hover {
     max-width: 100%;
     border-radius: 5px;
 }
+
+#results .movie-card { /* Changed from #results div */
+    background: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer; /* Show it’s clickable */
+}
+
+#results .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#results h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+#results img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#results .details {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+#results .details strong {
+    color: #1a1a1a;
+}
